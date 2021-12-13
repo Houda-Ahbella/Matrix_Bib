@@ -7,27 +7,28 @@ using namespace Algebre;
 
 int main()
 {
-    Matrix M1(2,2) ;
+    Matrix<int> M1(2,2) ;
     M1.Remplissage(5);
     M1.print();
 
-    Matrix M2(2, 2);
-    M2.Remplissage(-2);
+    Matrix<int> M2(2, 2);
+    M2.Remplissage(10);
     M2.print();
 
     (M1 + M2).print();
     (M1 - M2).print();
 
-    Matrix M3(3, 2);
-    M3.Remplissage(5);
+    Matrix<double> M3(3, 2);
+    M3.Remplissage(5.3);
+    M3.print();
 
-    Matrix M4(2, 3);
-    M4.Remplissage(5);
-
-    (M3 * M4).print();
-
-    M4 * 2;
+    Matrix<string> M4(2, 3);
+    M4.Remplissage("houda");
     M4.print();
+
+   
+
+   
     
 
 }
